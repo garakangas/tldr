@@ -1,6 +1,6 @@
 # tail
 
-> Via den sista delen av en fil.
+> Visa den sista delen av en fil.
 > Se även: `head`.
 > Mer information: <https://www.gnu.org/software/coreutils/manual/html_node/tail-invocation.html>.
 
@@ -8,7 +8,7 @@
 
 `tail {{sökväg/till/fil}}`
 
-- Visa de 10 sista raderna av flera olika filer:
+- Visa de 10 sista raderna av flera filer:
 
 `tail {{sökväg/till/fil1 sökväg/till/fil2 ...}}`
 
@@ -16,7 +16,7 @@
 
 `tail {{[-5|--lines 5]}} {{sökväg/till/fil}}`
 
-- Visa de sista `antal` raderna av en fil:
+- Visa filen från och med ett angivet radnummer:
 
 `tail {{[-n|--lines]}} +{{antal}} {{sökväg/till/fil}}`
 
@@ -32,6 +32,6 @@
 
 `tail {{[-F|--retry --follow]}} {{sökväg/till/fil}}`
 
-- Visa de sista `antal` raderna i en fil och updatera varje `sekunder` sekunder:
+- Visa de sista `antal` raderna i en fil och uppdatera var `sekunder` sekund:
 
 `tail {{[-n|--lines]}} {{antal}} {{[-s|--sleep-interval]}} {{sekunder}} {{[-f|--follow]}} {{sökväg/till/fil}}`
